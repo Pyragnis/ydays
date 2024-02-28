@@ -10,7 +10,8 @@ if(isset($_POST['email'], $_POST['mot_de_passe'])) {
     $result = $utilisateur->connexion($email, $mot_de_passe);
 
     if($result) {
-        echo "Connexion réussie!";
+        header("Location: ../vue/accueil.php");
+        exit; 
     } else {
         echo "Identifiants invalides!";
     }

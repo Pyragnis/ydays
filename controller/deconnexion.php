@@ -8,6 +8,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirige vers la page de connexion
-header("Location: connexion_form.php");
+header("Location: ../vue/connexion_form.php");
 exit;
 ?>
